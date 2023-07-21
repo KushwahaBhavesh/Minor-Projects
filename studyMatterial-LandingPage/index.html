@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=divice, initial-scale=1.0">
+        <title>personal website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="undefined" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+       <section class="header">
+           <nav>
+               <a href="home.html"><img src="img/Logo.png"></a>
+               <div class="nav-link" id="navlink" >
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul >
+                   <li ><a href="" >Home</a></li>
+                   <li><a href="">About</a></li>
+                   <li><a href="">practical</a></li>
+                   <li><a href="">Blog</a></li>
+                   <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+               <i class="fa fa-bars" onclick="showmenu()"></i>
+            </nav>
+
+            
+
+<!--Center text-->
+    <div class="text-box">
+        <h1> Tech Knowledge </h1>
+        <p>Here we are providing u to all Diploma subject related practicals</p>
+        <a href="" class="hero-btn">browse for more Practical</a>
+    </div>
+
+
+<!--Search box-->
+<div class="searchbox">
+    <input type="text" placeholder="Search" name="Search" class="searchtext">
+    <a href="#" class="searchbtn"><i class="fas fa-search fa-1.5x"></i></a>
+</div>
+
+
+       </section>
+
+
+<!------------practicals----------->
+
+<section class="practical">
+    <h1>Practical We Provide</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque optio dolorem, ex incidunt accusamus consequuntur recusandae quos culpa omnis fuga cupiditate blanditiis quisquam numquam nisi molestiae tempora harum. Quia, officia.</p>
+
+    <div class="row">
+        <div class="practical-col">
+            <h3>JAVA</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi sapiente illo sint numquam. Error pariatur itaque quibusdam repellat deleniti ea omnis? Reiciendis, sunt recusandae? Id maiores ipsa officia facilis!</p>
+        </div>
+        <div class="practical-col">
+            <h3>ANDROID</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi sapiente illo sint numquam. Error pariatur itaque quibusdam repellat deleniti ea omnis? Reiciendis, sunt recusandae? Id maiores ipsa officia facilis!</p>
+        </div>
+        <div class="practical-col">
+            <h3>C++</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non animi sapiente illo sint numquam. Error pariatur itaque quibusdam repellat deleniti ea omnis? Reiciendis, sunt recusandae? Id maiores ipsa officia facilis!</p>
+        </div>
+
+    </div>
+</section>
+
+<!-----campus------>
+
+<section class="cources">
+    <h1>Our cources</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus eligendi alias inventore provident eaque at asperiores. Voluptate sint natus laborum quasi, vitae, minima iure vel repellat beatae ea ratione illo.</p>
+
+    <div class="row">
+        <div class="cources-col">
+            <h3>Diploma</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis fugiat officia similique rem error soluta veniam magnam voluptatum eaque. Ipsam laboriosam omnis modi aliquid eligendi illum, quia facere voluptatum debitis.</p>
+        </div>
+        <div class="cources-col">
+            <h3>B.E </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis fugiat officia similique rem error soluta veniam magnam voluptatum eaque. Ipsam laboriosam omnis modi aliquid eligendi illum, quia facere voluptatum debitis.</p>
+        </div>
+        <div class="cources-col">
+            <h3>B.Tech</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis fugiat officia similique rem error soluta veniam magnam voluptatum eaque. Ipsam laboriosam omnis modi aliquid eligendi illum, quia facere voluptatum debitis.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-----Footer------>
+<section class="Footer">
+    <h4>About US</h4>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.<br> Eos, nihil! Expedita sunt, excepturi molestias incidunt in amet? Incidunt, odio ipsam cum nihil, cupiditate eos eligendi labore fugit corrupti facere ratione.</p>
+    <div class="icon">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+    </div>
+</section>
+
+
+
+
+
+<!--java scrriplt for toogle menu-->       
+    <script>
+            var navlink=document.getElementById("navlink");
+
+            function showmenu(){
+                    navlink.style.right="0";
+            }
+
+            function hidemenu(){
+                    navlink.style.right="-200px";
+            }
+    </script>
+
+    </body>
+</html>

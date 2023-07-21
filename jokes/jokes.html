@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: chartreuse;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            place-items: center;
+        }
+
+        .main-container {
+            background-color: aqua;
+            margin: auto;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>Best Jokes to make your day </h3>
+        <div class="main-container">
+            
+            <div id="joke" class="joke">Loading....</div>
+            <button id="jokebtn" class="btn">NEXT JOKE</button>
+        </div>
+    </div>
+    <script>
+        const joke = document.querySelector("#joke")
+        const jokebtn = document.querySelector("#jokebtn")
+
+        // async await
+        const generatejoke = async () => {
+            try {
+                const setheader = {
+                    headers: {
+                        Accept: "application/json"
+                    }
+                }
+                const res = await fetch("https://icanhazdadjoke.com", setheader)
+                const data = await res.json()
+                joke.innerHTML = data.joke
+            } catch (error) {
+                console.log(`error ${error}`);
+            }
+        }
+        jokebtn.addEventListener('click', generatejoke)
+        generatejoke()
+
+    </script>
+</body>
+
+</html>

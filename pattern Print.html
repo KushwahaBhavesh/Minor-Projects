@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern: javaScript</title>
+</head>
+
+<body>
+    <!-- Creating Dynamic Pattern using Form Element -->
+    <form action="" onsubmit="pattern()">
+        <label for="size">Size</label>
+        <input type="number" name="" id="num">
+        <input type="submit" name="temp" id="submit">
+        <p id="pattern"></p>
+    </form>
+
+    <!-- using BOM -->
+    <!-- <button id="btn" onclick="pattern()">click me</button> -->
+
+
+
+    <script>
+        // using Form Element
+        const pattern = () => {
+            const size = document.getElementById('num').value
+            console.log(size);
+            for (let i = 1; i <= size; i++) {
+                for (let j = 1; j <= i; j++) {
+                    // document.getElementById('pattern').innerHTML='*'
+                    document.write('*')
+                }
+                document.write('<br>')
+            }
+        }
+
+
+        //using BOM
+        // const pattern = () => {
+        //     const size = prompt('Enter Size of Pattern')
+        //     for (let i = 1; i <= size; i++) {
+        //         for (let j = 1; j <= i; j++) {
+        //             document.write('*')
+        //         }
+        //         document.write('<br>')
+
+        //     }
+        // }
+
+        
+    </script>
+</body>
+
+</html>
